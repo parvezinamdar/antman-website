@@ -14,6 +14,9 @@
     background: url(antmanbg.jpg) no-repeat center/cover;
     z-index: -1;
 }
+a{
+    text-decoration: none;
+}
 .row{
     width: 100%;
     height: 100vh;
@@ -25,7 +28,7 @@
     width: 72%;
     float: left;
     height: 100vh;
-    overflow: hidden;`
+    overflow: hidden;
 }
 .column-2{
     width: 28%;
@@ -61,10 +64,11 @@
     font-size: 18px;
 }
 .hero-description a{
+    font-size: 18px;
     text-decoration: none;
     margin-top: 60px;
     background: #ce0523;
-    padding: 15px 20px;
+    padding: 15px 40px;
 }
 .hero-description span img{
     margin: 10px 0 30px;
@@ -153,10 +157,15 @@
     .header span{
         font-size: 15px;
     }
+
 }
 @media (max-width: 1280px){
     .column-1{
         width: 100%;
+    }
+    .movie-description ul li{
+
+        padding: 5px 20px 5px 20px;
     }
     .hero-description p{
         font-size: 20px;
@@ -197,5 +206,23 @@
         justify-content: center;
         align-items: center;
         padding: 0;
+    }
+}
+@media (max-width: 500px){
+    .logo-image{
+        position: absolute;
+        top: 3%;
+        left: 5%;
+    }
+    .hero-description h5{
+        margin-top: -10px;
+    }
+
+    .hero-description span img{
+        margin: 10px 0 30px;
+        width: 320px;
+    }
+    .header span{
+        font-size: 20px;
     }
 }
